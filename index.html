@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Una cartita pa usté 💖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font Kawaii -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Música -->
+    <audio id="bgMusic" loop>
+      <source src="assets/music/fondo.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Pantalla inicial -->
+    <div id="startScreen" class="screen">
+      <div class="card" id="card">💌</div>
+      <p class="subtitle">Tienes una carta especial...</p>
+    </div>
+
+    <!-- Pantalla pregunta -->
+    <div id="questionScreen" class="screen hidden">
+      <h1>💖 ¿Quieres ser mi San Valentín? 💖</h1>
+
+      <div class="buttons">
+        <button id="yesBtn" class="yes">
+          <img src="assets/pixel/gato-si.gif" class="catIcon" />
+          SI
+        </button>
+
+        <button id="noBtn" class="no">
+          <img src="assets/pixel/gato-no.gif" class="catIcon" />
+          NO
+        </button>
+      </div>
+    </div>
+
+    <!-- Pantalla final -->
+    <div id="finalScreen" class="screen hidden">
+      <h1>💖 Sabía que dirías que sí 💖</h1>
+      <p class="finalMessage">
+        Nos vemos en tu casa xD<br />
+        día de hacer pastelitos 🧁<br />
+        y beber vino 🍷<br />
+      </p>
+
+      <h2>Te amo 🌸</h2>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
